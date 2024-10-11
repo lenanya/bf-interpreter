@@ -24,7 +24,7 @@ dim lr as integer
 
 dim o as string = ""
 
-dim add as byte = 1, subt as byte = 1, lft as byte = 1, rgt as byte = 1
+dim add as byte = 1, subt as byte = 1, lft as byte = 1, rgt as byte = 1, mlt as byte = 1
 
 while cp < i
 select case f(cp)
@@ -95,6 +95,18 @@ select case f(cp)
 		end select
 		p += rgt
 		cp += 1
+	case 42
+		mlt = f(cp + 1)
+		select case mlt
+			case 49, 50, 51, 52, 53, 54, 55, 56, 57
+				mlt -= 48
+			case 65, 66, 67, 68, 69, 70, 71, 72
+				mlt -= 55
+			case 95 to 102
+				mlt -= 85
+		end select
+		m(p) *= mlt
+		cp += 1		
 	end select
 	cp += 1
 wend
