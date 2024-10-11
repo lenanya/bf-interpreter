@@ -2,10 +2,19 @@
 brainfuck interpreter in freebasic
 
 # usage
-bfi <filename.bf>
+you need free basic installed, or need to figure out how to install all the libraries if you want to use the release binary
+
+if you are on arch and have yay just do
+
+`yay -S freebasic`
+
+
+to run:
+
+`bfi <filename.bf>`
 
 # uh
-, isnt actually implemented cuz i forgor
+`,` isnt actually implemented cuz i forgor
 
 # $
 `$F` expands to `+++++ +++++ +++++` (you can use any value 1-F)
@@ -15,5 +24,5 @@ bfi <filename.bf>
 `{F` for `<`
 # }
 `}F` for `>`
-
+#
 (all of them work with 1-F / f)
