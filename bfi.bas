@@ -1,4 +1,4 @@
-dim f(1000) as integer
+dim f(99999) as integer
 dim filename as string
 
 filename = command( 1 )
