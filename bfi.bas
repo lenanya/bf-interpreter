@@ -44,8 +44,6 @@ select case f(cp)
 			do until( f(cp) = 93 )
 				cp += 1
 			loop 
-		else 
-			m(p) -= 1
 		endif
 	case 93
 		cp = lr - 1		
