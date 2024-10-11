@@ -24,5 +24,7 @@ to run:
 `{F` for `<`
 # }
 `}F` for `>`
+# \*
+`*F` multiplies the value at the current location by 15
 #
 (all of them work with 1-F / f)
