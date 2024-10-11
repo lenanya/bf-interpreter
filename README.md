@@ -9,7 +9,7 @@ bfi <filename.bf>
 
 # $
 `$F` expands to `+++++ +++++ +++++` (you can use any value 1-F)
-# #
+# \#
 `#F` same as above, except with `-`
 # {
 `{F` for `<`
